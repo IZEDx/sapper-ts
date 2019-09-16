@@ -3,12 +3,6 @@ const path = require('path');
 const config = require('sapper/config/webpack.js');
 const pkg = require('./package.json');
 
-const {
-	preprocess,
-	createEnv,
-	readConfigFile
-} = require("@pyoner/svelte-ts-preprocess");
-
 const mode = process.env.NODE_ENV;
 const dev = mode === 'development';
 
@@ -70,7 +64,7 @@ module.exports = {
 							css: false,
 							generate: 'ssr',
 							dev,
-							preprocess: preprocess(opts)
+							preprocess: require('svelte-preprocess')({ /* options */ })
 						}
 					}
 				},
