@@ -18,7 +18,7 @@
     "@types/express": "^4.17.1",
     "@types/node": "^12.7.4",
     "npm-run-all": "^4.1.5",
-    "sapper": "^0.27.0",
+    "sapper": "^0.27.11",
     "sass": "^1.23.0-module.beta.1",
     "svelte": "^3.0.0",
     "svelte-loader": "^2.9.0",
